@@ -1,0 +1,20 @@
+
+<style>*{color:#FF0000;}ul#nx {position:absolute;height:100%;top:8;left:22;writing-mode:horizontal-rl;
+text-align:left;font-size:5.2rem;}ul#nx>li {display:inline-block;padding:2 rem;}</style><ul id="nx"><li>lorenz attractor</li></ul> 
+<style>body {background: #18181d;}canvas { display: inline-block; max-width: 100%; max-height: 100%;}</style>
+<script>window.console =window.console || function(t) {};</script><script>
+ if (document.location.search.match(/type=embed/gi)) {window.parent.postMessage("resize", "*");}</script></head>
+<body translate="no"><canvas id="c2" width="1500" height="860"><script id="rendered-js">
+var canvas=document.getElementById('canvas'),xt =c2.getContext('2d'),h= 0.013,t =-10,bb=0,dc=1,bc=10,n=20000,i=0;
+setInterval(function () {for (var k=0; k<20; k+=1) {be=bb+h*t*(bb-dc);
+ re=dc+h*(-bb*bc+18*bb);bc=bc+h*(bb*dc*0.5-bc);xt.strokeStyle="hsl(" +Math.abs(be)*30 + "," +Math.abs(re) *10 + "%," +66 + "%)";
+xt.beginPath();xt.moveTo(bb*22+650,dc*22+450);xt.lineWidth=2;
+xt.lineTo(be*22+650,re*22+450);xt.stroke();bb=be;dc=re;i+= 0.4;}},1);</script>
+
+  
+
+
+
+
+ 
+</canvas></body></html>
